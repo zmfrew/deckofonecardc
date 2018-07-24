@@ -13,6 +13,7 @@
 		B623ED322107A9A80003E359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B623ED312107A9A80003E359 /* Assets.xcassets */; };
 		B623ED352107A9A80003E359 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B623ED332107A9A80003E359 /* LaunchScreen.storyboard */; };
 		B623ED382107A9A80003E359 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B623ED372107A9A80003E359 /* main.m */; };
+		B623ED472107AC660003E359 /* DVMCard.m in Sources */ = {isa = PBXBuildFile; fileRef = B623ED462107AC660003E359 /* DVMCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		B623ED342107A9A80003E359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B623ED362107A9A80003E359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B623ED372107A9A80003E359 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B623ED452107AC660003E359 /* DVMCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCard.h; sourceTree = "<group>"; };
+		B623ED462107AC660003E359 /* DVMCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 		B623ED442107AA0C0003E359 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B623ED452107AC660003E359 /* DVMCard.h */,
+				B623ED462107AC660003E359 /* DVMCard.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B623ED2D2107A9A70003E359 /* ViewController.m in Sources */,
+				B623ED472107AC660003E359 /* DVMCard.m in Sources */,
 				B623ED382107A9A80003E359 /* main.m in Sources */,
 				B623ED2A2107A9A70003E359 /* AppDelegate.m in Sources */,
 			);
