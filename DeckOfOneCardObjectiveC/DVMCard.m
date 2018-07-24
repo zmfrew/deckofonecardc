@@ -22,10 +22,8 @@
 
 - (instancetype)initWithDictionary:(NSDictionary<NSString *,id> *)dictionary
 {
-    NSArray *cardsArray = dictionary[@"cards"];
-    NSDictionary *cardsDictionary = [cardsArray firstObject];
-    NSString *suit = cardsDictionary[[DVMCard suitKey]];
-    NSString *imageAsURL = cardsDictionary[[DVMCard imageKey]];
+    NSString *suit = dictionary[[DVMCard suitKey]];
+    NSString *imageAsURL = dictionary[[DVMCard imageKey]];
     
     return [self initWithSuit:suit imageAsURL:imageAsURL];
 }

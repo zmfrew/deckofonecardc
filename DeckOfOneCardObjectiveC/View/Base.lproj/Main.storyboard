@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DVMCardViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,17 +23,20 @@
                                 <rect key="frame" x="37.5" y="110" width="300" height="467"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KJL-WB-BvF">
-                                        <rect key="frame" x="30" y="0.0" width="240" height="301"/>
+                                        <rect key="frame" x="30" y="0.0" width="240" height="372.5"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7g-tL-ATE">
-                                        <rect key="frame" x="129" y="311" width="42" height="48.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7g-tL-ATE">
+                                        <rect key="frame" x="125" y="382.5" width="50" height="47"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gr3-BP-dOd">
-                                        <rect key="frame" x="127" y="369.5" width="46" height="97.5"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="114" y="439.5" width="72" height="27.5"/>
+                                        <state key="normal" title="Draw Card"/>
+                                        <connections>
+                                            <action selector="drawCardButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9bf-xW-ZnM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -47,6 +50,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cardImage" destination="KJL-WB-BvF" id="rGu-An-JTD"/>
+                        <outlet property="suitLabel" destination="M7g-tL-ATE" id="Aa2-m5-mcC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
